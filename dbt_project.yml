@@ -1,6 +1,18 @@
 # dbt_project.yml
-name:
-version:
-...
+name: dbt-projet
+version: '1.0'
+
+config-version: 2
+
+profile: default
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  mon_projet_dbt:
+    +materialized: view
+
 dbt-cloud:
-    project-id: 70471823469993
+  project-id: 70471823469993
