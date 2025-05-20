@@ -1,5 +1,5 @@
 # dbt_project.yml
-name: dbt-projet
+name: dbt_projet
 version: '1.0'
 
 config-version: 2
